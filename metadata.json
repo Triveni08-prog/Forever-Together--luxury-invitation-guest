@@ -1,0 +1,6 @@
+{
+  "name": "Forever Together - Luxury Wedding Invitation & Guest Management",
+  "description": "Premium Indian luxury digital wedding invitation, guest list manager, RSVP portal, and event itinerary platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-display: 'Cinzel', Georgia, serif;
+    --font-script: 'Great Vibes', cursive;
+    --font-hindi: 'Rozha One', 'Yatra One', serif;
+  }
+
+  body {
+    background-color: #FAF7F2;
+    color: #2D241E;
+    font-family: var(--font-serif);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+.font-hindi {
+  font-family: var(--font-hindi);
+}
+
+/* Indian Luxury Royal Palette Classes */
+.bg-ivory {
+  background-color: #FAF7F2;
+}
+
+.bg-cream {
+  background-color: #F4EFE6;
+}
+
+.bg-maroon {
+  background-color: #6B1724;
+}
+
+.text-maroon {
+  color: #6B1724;
+}
+
+.border-maroon {
+  border-color: #6B1724;
+}
+
+.bg-gold {
+  background-color: #C5A059;
+}
+
+.text-gold {
+  color: #C5A059;
+}
+
+.border-gold {
+  border-color: #C5A059;
+}
+
+/* Subtle Gold Foil Shimmer Border */
+.gold-border {
+  border: 1px solid rgba(197, 160, 89, 0.35);
+  box-shadow: inset 0 0 12px rgba(197, 160, 89, 0.05);
+}
+
+.gold-border-double {
+  border: 3px double rgba(197, 160, 89, 0.55);
+}
+
+/* Floating animation for rose petals and gold particles */
+@keyframes floatSlow {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-20px) rotate(10deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.8;
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+/* Print styles for downloadable/printable invitation */
+@media print {
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(197, 160, 89, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(107, 23, 36, 0.6);
+}
